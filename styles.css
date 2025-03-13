@@ -22,15 +22,25 @@ header {
   position: relative;
   padding: 30px;
 }
-.logo{
-  width: 150px;
-  height: auto;
-  position: absolute;
-  left: 0;
-  margin-left: 10px;
+.logo {
+    width: 100px;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0 auto;
 }
-.header {
-  text-align: center; /* Centers content */
+@media (max-width: 768px) {  
+    .logo {
+        width: 70%; 
+        max-width: 150px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+    header {
+        flex-direction: column; 
+        text-align: center;
+    }
 }
 
 .nav-links {
